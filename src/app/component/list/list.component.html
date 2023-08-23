@@ -1,0 +1,35 @@
+<div class="flex">
+    
+
+<section class="popular" id="popular">
+    
+    
+    <div class="box-container">
+        <div class="box" *ngFor="let lists of List">
+          <div class="col card p-4">
+            <div >
+              <img src="{{ lists.image }}" alt="{{ lists.HotelName }}" class="img-fluid mb-2 mb-md-0">
+            </div>
+            
+          
+                <div >
+                    <h3>{{ lists.HotelName }}</h3>
+                    <p>{{ lists.Address }},{{ lists.City }},{{ lists.Postalcode }}</p>
+                    
+                    <p>rating: {{ lists.rating }}</p>   
+                </div>
+
+                <div class="buttons-container"><button class="btn btn-primary " (click)="redirectToBooking(lists)">Book</button></div>
+            </div>
+        </div>        
+    </div>
+</section>
+</div>
+
+
+
+  
+
+
+  
+

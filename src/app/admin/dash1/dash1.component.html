@@ -1,0 +1,53 @@
+<div class="d-flex">
+  <app-dasboard></app-dasboard>
+  <section class="home-section">
+    <div class="home-content">
+      <h2 style="color:#104bb7">Dashboard</h2>
+      <br>
+      <br>
+      <div class="overview-boxes">
+        <div class="box" style="width: 200px; height: 100px;">
+          <div class="right-side">
+            <div class="box-user"><h4 class='bx bx-user'>Users</h4></div>
+            <br>
+            <div>
+              <button class="btn btn-primary" routerLink="/all-users">View Users</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" style="width: 200px; height: 100px;">
+          <div class="right-side">
+            <div class="box-user"><h4 class='bx bx-list-ul'>Hotels</h4></div>
+            <br>
+            <div>
+              <button class="btn btn-primary" routerLink="/all-list">View Hotels</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" style="width: 200px; height: 100px;">
+          <div class="right-side">
+            <div class="box-user"><h4 class='bx bx-calendar-check'>Bookings</h4></div>
+            <br>
+            <div>
+              <button class="btn btn-primary" routerLink="/booking">View Bookings</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" style="width: 200px; height: 100px;">
+          <div class="right-side">
+            <div class="box-user"><h4 class='bx bx-hotel'>Add Hotels</h4></div>
+            <br>
+            <div>
+              <button class="btn btn-primary" routerLink="/add-list">Add Hotel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </section>
+</div>
+

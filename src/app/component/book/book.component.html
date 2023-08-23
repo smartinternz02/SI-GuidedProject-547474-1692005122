@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <div class="flex">
+       
+<div class="container">
+  <h1>Table Booking</h1>
+  <br>
+  <br>
+  <div><h3>Booking For {{ht}}</h3></div>
+  <form #Form="ngForm" (ngSubmit)="submitForm(Form)">
+    <label for="name">Name:</label>
+    <input type="text"  [(ngModel)]="bookingData.name" name="name" id="name"  required>
+<br>
+    <label for="email">Email:</label>
+    <input type="email"  id="email" [(ngModel)]="bookingData.email" name="email" required>
+<br>
+    <label for="date">Date:</label>
+    <input type="date"   id="date" [(ngModel)]="bookingData.date" name="date" required>
+<br>
+    <label for="time">Time:</label>
+    <input type="time"  id="time" [(ngModel)]="bookingData.time" name="time" required>
+<br>
+    <label for="guests">Number of Guests:</label>
+    <input type="number"  id="guests" [(ngModel)]="bookingData.guests" name="guests" min="1" required>
+<br>
+    <input type="submit"  value="Book Table">
+  </form>
+  </div>
+
+ </div>
+</body>
+</html>
+   

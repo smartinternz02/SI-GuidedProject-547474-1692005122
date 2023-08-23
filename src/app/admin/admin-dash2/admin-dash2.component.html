@@ -1,0 +1,73 @@
+
+
+
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Admin Dashboard | CodingLab</title>
+
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Add CSS styles for the sidebar and content area */
+    .sidebar {
+      width: 250px;
+      /* Add other styles for the sidebar */
+    }
+    
+    .content {
+      margin-left: 250px;
+      /* Add other styles for the content area */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-Hotel'></i>
+      <span class="logo_name">Table Booking</span>
+    </div>
+    <ul class="nav-links">
+      
+      
+     
+      <li>
+        <a href="/admin-bookings">
+          <i class='bx bx-calendar-check'></i>
+          <span class="links_name">All Bookings</span>
+        </a>
+      </li>
+     
+      <li class="log_out">
+        <a href="#"  (click)="onlogout()">
+          <i class='bx bx-log-out'></i>
+          <span class="links_name">Log out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <!-- Router outlet content will be displayed here -->
+    <router-outlet></router-outlet>
+  </div>
+
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function() {
+      sidebar.classList.toggle("active");
+      if (sidebar.classList.contains("active")) {
+        sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+      } else {
+        sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+      }
+    }
+  </script>
+</body>
+
+</html>
