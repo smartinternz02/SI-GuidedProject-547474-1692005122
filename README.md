@@ -1,3 +1,9 @@
+INTRODUCTION:
+Welcome to our Table Booking App, the ultimate solution for hassle-free restaurant reservations! With our intuitive platform, you can effortlessly discover, book, and manage your dining experiences. Say goodbye to long wait times and uncertainty – our app empowers you to explore a diverse array of restaurants, check real-time table availability, and secure your spot in just a few taps. 
+Whether you're planning a romantic date night, a family celebration, or a business rendezvous, our user-friendly interface ensures a seamless journey from search to reservation. Experience the convenience of modifying or canceling reservations at your fingertips and receive timely notifications to stay informed. Join us in elevating your dining adventures as we redefine convenience, choice, and culinary satisfaction. Download the Table Booking App today and embark on a new era of dining convenience!
+
+
+
 # Client
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
