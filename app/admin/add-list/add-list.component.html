@@ -1,0 +1,50 @@
+<div class="d-flex">
+    <app-dasboard></app-dasboard>
+
+    <div class="add-product-container" style="width: 800px;">
+        <div class="card" style="border: none;">
+            <form #hotelForm="ngForm" (ngSubmit)="submitForm(hotelForm)">
+                <h1 style="color: #104bb7; font-size: 38px; font-weight: bold;" class="mb-4">Add Hotels</h1>
+                <div class="add-product-form-container row">
+                    <div class="col-6 col-12 col-md-6">
+                        <div class="form-group mb-2">
+                            <label for="hotelname">Hotel name</label>
+                            <input placeholder="Enter hotelname" type="text" [(ngModel)]="hotel.HotelName" class="form-control" id="hotelname"
+                                name="hotelName" required>
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="address">Address</label>
+                            <input placeholder="Enter address" type="text" [(ngModel)]="hotel.Address" class="form-control" id="address"
+                                name="Address" required>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="City">City</label>
+                            <input placeholder="Enter City" type="text" [(ngModel)]="hotel.City" class="form-control" id="city"
+                                name="City" required>
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="Postalcode">Postal Code</label>
+                            <input placeholder="Postal Code" type="text" [(ngModel)]="hotel.Postalcode" class="form-control" id="Postalcode"
+                                name="Postalcode" required>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="image">Image</label>
+                            <input placeholder="Enter image url" type="text" [(ngModel)]="hotel.image" class="form-control" id="image"
+                                name="image" required>
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="rating">Rating</label>
+                            <input placeholder="Enter rating" type="text" [(ngModel)]="hotel.rating" class="form-control" id="rating"
+                                name="rating" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mt-4 w-100">Add Product</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

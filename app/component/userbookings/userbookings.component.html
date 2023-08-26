@@ -1,0 +1,32 @@
+<div class="flex">
+ 
+<ul class="list-group p-4">
+    
+    <li class="list-group-item" *ngFor="let lists of bookingDetails ">
+      <div class="col card p-4">
+        <div>
+            <strong>Boooking Id:</strong> {{ lists._id }}
+        </div>
+        <div>
+          <strong>Hotel Name:</strong> {{ lists.HotelName }}
+        </div>
+        <div>
+          <strong> Name:</strong> {{ lists.name }}
+        </div>
+        
+        <div>
+          <strong>Email:</strong> {{ lists.email }}
+        </div>
+        <div>
+            <strong>Date:</strong> {{ lists.date }}
+        </div>
+        <div>
+            <strong>Time:</strong> {{ lists.time}}
+        </div>
+        <div>
+            <strong>Number of Guests:</strong> {{ lists.guests }}
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

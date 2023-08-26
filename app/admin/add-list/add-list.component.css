@@ -1,0 +1,13 @@
+.add-product-container {
+    border: 1px solid#ccc;
+    padding: 40px;
+    margin: 10px;
+    
+    
+}
+
+.d-flex{
+    height: 90vh;
+    overflow: auto;
+}
+

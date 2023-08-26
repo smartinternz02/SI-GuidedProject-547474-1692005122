@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <title>Ludiflex | Login</title>
+</head>
+<body>
+<div class="cc">
+   <div class="box">
+    <div class="container">
+        <div class="top">
+            <span>Don't Have an account?</span>
+            <header>Register</header>
+        </div>
+        <form #userForm="ngForm"   (ngSubmit)="submitForm()" >
+        <div class="input-field">
+            
+            <input type="text" class="input" [(ngModel)]="user.firstname"  placeholder="FirstName" name="firstname" id="firstname"  >
+            
+        </div>
+        <br>
+        <div class="input-field">
+            <input type="text" class="input" [(ngModel)]="user.lastname" placeholder="LastName" name="lastname" id="lastname" >
+            
+        </div>
+        <br>
+        <div class="input-field">
+            <input type="email" class="input" [(ngModel)]="user.email" placeholder="Email" name="email" id="email" >
+            
+        </div>
+
+        <br>
+        <div class="input-field">
+            <input type="Password" class="input" [(ngModel)]="user.password" placeholder="Password" name="password" id="pwd" >
+            
+        </div>
+        <br>
+
+        <div class="input-field">
+            <input type="submit" class="submit" value="Register" id="">
+
+
+        </div>
+        <div class="mt-2"><a routerLink="/login" class="mt-2">Already have an account? click here</a> 
+          &nbsp;&nbsp;&nbsp;&nbsp; <a routerLink="/admin/login" class="mt-2">Admin</a> 
+        </div>
+
+    </form>
+        <br>
+        
+        
+    </div>
+</div>
+</div>  
+</body>
+</html>

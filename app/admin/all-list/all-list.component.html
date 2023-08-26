@@ -1,0 +1,48 @@
+<div class="d-flex" >
+  <app-dasboard></app-dasboard>
+  <section class="popular" id="popular">
+  <h1 class="heading"> <span style="color: #104bb7;">All Hotels</span></h1>
+  <div class="box-container">
+      <div class="box" *ngFor="let lists of List">
+        <div class="col card p-4" >
+          <div >
+            <img src="{{ lists.image }}" alt="{{ lists.HotelName }}" class="img-fluid mb-2 mb-md-0">
+         </div>
+         
+          <div>
+              <strong>Hotel Name:</strong> {{ lists.HotelName }}
+          </div>
+          
+          <div>
+            <strong>Address:</strong> {{ lists.Address }}
+          </div>
+          
+          <div>
+              <strong>City:</strong> {{ lists.City}}
+            </div>
+          
+            
+          <div>
+            <strong>Postal code:</strong> {{ lists.Postalcode }}
+          </div>
+          
+          <div>
+          <strong>{{ lists.rating }} star</strong>
+          </div>
+          <button  style="height: 40px;color:white;background-color: rgba(10, 111, 213, 0.932);border-radius: 6px;margin-bottom: 10px;outline: none;border: 0;" (click)="update(lists._id)">update</button>
+          <button style="height: 40px;color:black;background-color: rgb(246, 30, 30);border-radius: 6px;margin-bottom: 10px;outline: none;border: 0;" (click)="del(lists._id)">delete</button>
+        </div>
+      </div>
+    </div>
+</section>
+</div>
+        
+         
+      
+
+        
+
+        
+  
+
+  

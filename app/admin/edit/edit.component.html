@@ -1,0 +1,36 @@
+<div class="d-flex" >
+    <app-dasboard></app-dasboard>
+<form class="profile-form" (submit)="update()">
+    <div class="form-group">
+      <label for="HotelName">Hotel Name:</label>
+      <input class="form-control" type="text" id="firstname" [(ngModel)]="user.HotelName" name="HotelName" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="Address">Address:</label>
+      <input class="form-control" type="text" id="Address" [(ngModel)]="user.Address" name="Address" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="City">City:</label>
+      <input class="form-control" type="text" id="City" [(ngModel)]="user.City" name="City" required>
+    </div>
+
+    <div class="form-group">
+        <label for="Postalcode">Email:</label>
+        <input class="form-control" type="text" id="Postalcode" [(ngModel)]="user.Postalcode" name="Postalcode" required>
+      </div>
+  
+    <div class="form-group">
+      <label for="image">image:</label>
+      <input class="form-control" type="text" id="image" [(ngModel)]="user.image" name="image" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="rating">type:</label>
+      <input class="form-control" type="text" id="rating" [(ngModel)]="user.rating" name="rating" required>
+    </div>
+  
+    <button class="btn btn-primary "  type="submit">Update</button>
+  </form>
+</div>
